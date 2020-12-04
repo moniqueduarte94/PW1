@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CDN BS 3.X-->	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<title>MIRROR FASHION - A SUA MELHO ESCOLHA</title>
+</head>
+<body>
+<div class="container" fluid>
+  <div class="row">
+    <div class="col-sm-12" id="header">
+      <h1>Ótima Escolha</h1>
+      <h5>Obrigado por comprar no Mirror Fashion! Preencha os dados para efetivar a compra</h5>  
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-1">
+      <div class="card">
+        <div class="card-header">
+          Sua compra
+        </div>
+        <div class="card-body">
+          <img src="camisa_linux.jpg" class="img-fluid img-thumbnail">
+        </div>
+        <div class="card-body">
+          <label>Produto</label><br>
+          CAMISA LINUX 
+          <br>
+          <br>
+          <label>Cor</label><br>
+          BRANCA
+          <br>
+          <br>
+          <label>Tamanho</label><br>
+          P
+          <br>
+          <br>
+          <label>Preço</label><br>
+          R$ 59,00 un 
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-7">
+      <form class="form-group">
+        <div class="row">
+          <div class="col-sm-6">
+            <fieldset>
+              <legend>
+                <h1>Dados Pessoais</h1>
+              </legend>
+            </fieldset>
+            <label for="nome">NOME:</label>
+            <input type="text" class="form-control" name="nome" placeholder="Digite seu nome" required autofocus>
+            <br>
+            <label for="email">EMAIL:</label>
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" name="email" placeholder="Digite seu email" required>
+            </div>
+            <br>
+            <label for="cpf">CPF</label>
+            <input type="text" class="form-control" name="cpf" placeholder="Digite seu CPF" required="">
+          </div>
+          <div class="checkbox">
+            <label for="check">
+              <input type="checkbox" name="check"> Quero receber span do Mirros Fashion
+            </label>            
+          </div>
+        </div> 
+          <div class="col-sm-6">
+            <fieldset>
+              <legend>
+                <h1>Cartão de Crédito</h1>
+              </legend>
+                <label for="cartao">Cartão VVV</label>
+              <input type="text" class="form-control" name="cartao" placeholder="XXXX.XXXX.XXXX.XXXX" required>
+              <br>
+              <label for="bandeira">Bandeira</label>
+              <select class="form-control" name="bandeira">
+                <option disabled="disabled" selected>Escolha a bandeira</option>
+                <option value="american">American Express</option>
+                <option value="master">Master Card</option>
+                <option value="visa">Visa</option>
+                <option value="elo">ELO</option>           
+              </select>
+              <br>
+              <label for="validade">Validade</label>
+              <input type="month" class="form-control" required>
+              <br>
+              <button class="bnt bnt-primary"><span class="glyphicon glyphicon-thumbs-up"></span> Confirmar pedido</button>
+            </fieldset>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>    
+</div>
+<style>
+  #header{
+    background-color: lightgrey;
+    height: 30vh;
+    padding-top: 5vh;
+    padding-left: 10%;        
+    }
+  #header h1{
+    font-size: 50px;            
+    }  
+  #header h5{
+    font-size: 18px;   
+    }
+  .card{
+    font-size: 16px;    
+    }
+  button{
+    float: right;    
+    }
+
+  
+</style>
+</body>
+</html>

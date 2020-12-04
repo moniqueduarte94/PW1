@@ -1,0 +1,27 @@
+-- banco de dados
+entidade - algo que pode ser representado (grupo de coisas). 
+ex: mÃ³vel (cadeira, mesas, guarda-roupas, estantes, etc)
+animal (gato, cachorro, cavalo, etc).
+
+atributos - caracterÃ­sticas de uma entidade, descrevem uma entidade ex.(mÃ³vel - cor, modelo, nome, tamanho, peso, descriÃ§Ã£o, etc.), 
+(animal - tamanho, porte, sexo, espÃ©cie, nome, cor..)
+
+tupla - representaÃ§Ã£o dos dados de uma entidade
+--------------------------------------
+QUANDO O BD FOR PASSAR PRA FASE DE DESENVOLVIMENTO
+
+entidade => tabela
+atributo => campos (tabela)
+tupla	 => registro 
+-------------------------------------
+RELACIONAMENTOS (cardinalidade) ENTRE ENTIDADES -  banco de dados
+
+veÃ­culo => carro, moto, aviÃ£o, helicÃ³ptero, barco, bicicleta...
+
+-------------------------------------
+TIPOS DE RELACIONAMENTO ENTRE ENTIDADES
+
+1:1 (UM PARA UM) - 
+1:N (UM PARA MUITOS)-- relacionamento mais comum em um bd
+N:N (MUITOS PARA MUITOS)
+AUTORRELACIONAMENTO - RECURSIVO

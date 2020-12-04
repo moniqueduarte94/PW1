@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EXERCÍCIOS 1 DE FORMULÁRIO</title>
+</head>
+<body>
+<h3>Cadastro de Usuários</h3>
+<fieldset id="dados-pessoais">
+		<legend>Dados Pessoais</legend>
+	<label for="nome">Nome:</label><br>
+			<input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+	<br>
+	<label for="email">E-mail:</label>
+	<br>
+			<input type="text" name="email" id="email" placeholder="ex.:seuemail@provedor.com">
+	<br>
+	<label for="nasc">Data de Nascimento:</label><br>
+			<input type="date" name="nasc" id="nasc" min="1900-01-01" max="2002-12-31" readonly="readonly">
+	<br>
+	<label for="sexo">Sexo</label>
+	<br>
+			<input type="radio" name="sexo" value="m">Masculino<br>
+			<input type="radio" name="sexo" value="f">Feminino<br>
+	<br>
+	</fieldset>
+	<br>
+	<fieldset id="endereço">
+		<legend>Endereço:</legend>
+	<label for="endereço">Endereço:</label><br>
+			<input type="text" name="endereço" id="endereço" placeholder="Digite seu Endereço">
+	<br>
+	<label for="number">Número:</label>
+	<br>
+			<input type="number" name="number" id="number" min="0" max="10000" placeholder="Número">
+	<br>
+	<label for="cep">CEP:</label><br>
+			<input type="number" name="cep" id="cep" min="0" max="10000" placeholder="ex.: 00000-000">
+	<br>
+	<label for="bairro">Bairro:</label>
+	<br>
+			<input type="text" name="bairro" id="bairro" placeholder="Digite seu Bairro">
+	<br>
+	<label for="cidade">Cidade:</label>
+	<br>
+	<select name="cidade" id="cidade">
+		<option disabled="disabled" selected>Escolha sua Cidade</option>
+		<option value="1">Cubatão</option>
+		<option value="2">Iguape</option>
+		<option value="3">Itanhém</option>
+		<option value="4">Mongaguá</option>
+		<option value="5">Peruibe</option>
+		<option value="6">Praia Grande</option>
+		<option value="7">Registro</option>
+		<option value="8">Santos</option>
+		<option value="9">São Vicente</option>
+	</select>
+	<br>
+	<label for="estado">Estado:</label>
+	<br>
+	<select name="estado" id="estado">
+		<option disabled="disabled" selected>Escolha seu Estado</option>
+		<option value="1">SP (São Paulo)</option><br>
+	<br>	
+	</fieldset>
+	<br>	
+
+
+
+</body>
+</html>
+<fieldset id="interesses">
+		<legend>Interesses</legend>
+			<label for="interesse">Marque quantos julgar necessário:</label><br>
+					<input type="checkbox" name="interesse[]" value="musica">Musica<br>
+					<input type="checkbox" name="interesse[]" value="filmes">Filmes<br>
+					<input type="checkbox" name="interesse[]" value="viagem">Viagens<br> 
+					<input type="checkbox" name="interesse[]" value="moda">Moda<br>
+					<input type="checkbox" name="interesse[]" value="gastronomia">Gastronomia<br>
+					<input type="checkbox" name="interesse[]" value="tecnologia">Tecnologia<br>
+					<input type="checkbox" name="interesse[]" value="arte">Arte<br>
+					<input type="checkbox" name="interesse[]" value="literatura">Literatura<br>
+					<input type="checkbox" name="interesse[]" value="carros">Carros<br> 
+					<input type="checkbox" name="interesse[]" value="motos">Motos<br>
+	</fieldset>
+	<br>
+	

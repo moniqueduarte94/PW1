@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TRABALHANDO COM FORMULÁRIOS</title>
+</head>
+<body>
+<form>
+	<fieldset id="dados-pessoais">
+		<legend>Dados Pessoais</legend>
+	<label for="nome">Nome:</label><br>
+	<input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+	<br>
+	<label for="email">E-mail:</label>
+	<br>
+	<input type="text" name="email" id="email" placeholder="ex.:seuemail@mail.com">
+	<br>
+	<label for="nasc">Data de Nascimento:</label><br>
+	<input type="date" name="nasc" id="nasc" min="1900-01-01" max="2002-12-31" readonly="readonly">
+	<br>
+	<label for="idade">Idade:</label><br>
+	<input type="number" name="idade" id="idade" min="0" max="120">
+	<br>
+	<label for="imagem">Sua Foto:</label><br>
+	<input type="file" name="imagem" id="imagem">
+	<br>
+	<label for="senha">Senha:</label>
+	<br>
+	<input type="password" name="senha" id="senha" required>
+	</fieldset>
+	<br>
+	<fieldset id="veiculo">
+		<legend>Escolha o seu carro</legend>
+	<label for="modelo">Modelo</label>
+	<br>
+	<select name="modelo" id="modelo">
+		<option disabled="disabled" selected>Escolha um modelo</option>
+		<option value="1">Fiesta</option>
+		<option value="2">Celta</option>
+		<option value="3">Gol</option>
+		<option value="4">Marea</option>
+		<option value="5">Picanto</option>
+	</select>
+	<br>
+	<label for="marca">Montadora</label> <br>
+	<select name="marca" id="marca">
+		<option disabled="disabled" selected>Escolha a marca</option>
+		<option value="1">Mercede-Benz</option>
+		<option value="2">Honda</option>
+		<option value="3">Toyota</option>
+		<option value="4">Fiat</option>
+		<option value="5">VolksWagen</option>
+	</select>
+	</fieldset>
+	<br>
+	<label for="sexo">Escolha o sexo</label>
+	<br>
+	<input type="radio" name="sexo" value="m">Masculino<br>
+	<input type="radio" name="sexo" value="f">Feminino<br>
+	<br>
+	<label for="interesse">Selecione seus interesses</label><br>
+	<input type="checkbox" name="interesse[]" value="musica">Musica<br>
+	<input type="checkbox" name="interesse[]" value="filmes">Filmes<br>
+	<input type="checkbox" name="interesse[]" value="viagem">Viagens<br> 
+	<br>
+	<label for="obs">Escreva algo sobre voce</label><br>
+	<textarea name="obs" cols="20" rows="5"></textarea>
+	<br>
+	<input type="submit" value="Cadastrar">
+	<button>Cadastrar</button>
+</form>
+<style>
+	body{
+		background-color: #0abab5;
+		font-family: "Arial";
+	}
+	fieldset{		
+		width: 50%;
+	}
+	#dados-pessoais{
+		background-color: yellow;
+	}
+	#veiculo{
+		background-color: pink;
+	}	
+	legend{
+		color: darkred;
+	}	
+	label{
+		color: blue;
+		font-size: 12pt;
+	} 	
+	input[type=text]{
+		color: darkgreen;
+	}
+	input[type=text], input[type=number], input[type=date], input[type=password], select{
+		width: 50%;	
+  	}
+	input, select{
+		margin-bottom: 10px;
+	}
+	textarea{
+		resize: none;
+		width: 50%;
+	}
+</style>
+</body>
+</html>
+
+
+<fieldset id="interesses">
+		<legend>Interesses</legend>
+			<label for="interesse">Marque quantos julgar necessário:</label><br>
+					<input type="checkbox" name="interesse[]" value="musica">Musica<br>
+					<input type="checkbox" name="interesse[]" value="filmes">Filmes<br>
+					<input type="checkbox" name="interesse[]" value="viagem">Viagens<br> 
+					<input type="checkbox" name="interesse[]" value="moda">Moda<br>
+					<input type="checkbox" name="interesse[]" value="gastronomia">Gastronomia<br>
+					<input type="checkbox" name="interesse[]" value="tecnologia">Tecnologia<br>
+					<input type="checkbox" name="interesse[]" value="arte">Arte<br>
+					<input type="checkbox" name="interesse[]" value="literatura">Literatura<br>
+					<input type="checkbox" name="interesse[]" value="carros">Carros<br> 
+					<input type="checkbox" name="interesse[]" value="motos">Motos<br>
+	</fieldset>
+	<br>
